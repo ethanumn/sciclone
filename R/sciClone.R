@@ -443,8 +443,8 @@ cleanAndAddCN <- function(vafs, cn, num, cnCallsAreLog2, regionsToExclude, useSe
     # if(length(vafs[,1]) == 0){return(vafs)}
 
     ##remove NA sites
-    vafs = vafs[!(is.na(vafs$vaf)),]
-    if(length(vafs[,1]) == 0){return(vafs)}
+    # vafs = vafs[!(is.na(vafs$vaf)),]
+    # if(length(vafs[,1]) == 0){return(vafs)}
 
     ##remove duplicate sites
     vafs = unique(vafs)
