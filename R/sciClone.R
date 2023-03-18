@@ -439,8 +439,8 @@ cleanAndAddCN <- function(vafs, cn, num, cnCallsAreLog2, regionsToExclude, useSe
     names(vafs) = c("chr","st","ref","var","vaf")
 
     ##remove MT values
-    vafs = vafs[!(vafs$chr == "M" | vafs$chr == "MT"),]
-    if(length(vafs[,1]) == 0){return(vafs)}
+    # vafs = vafs[!(vafs$chr == "M" | vafs$chr == "MT"),]
+    # if(length(vafs[,1]) == 0){return(vafs)}
 
     ##remove NA sites
     vafs = vafs[!(is.na(vafs$vaf)),]
